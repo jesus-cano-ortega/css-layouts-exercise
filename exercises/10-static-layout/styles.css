@@ -1,5 +1,24 @@
 /* your code here */
 
+h1 { grid-area: h1; }
+header { grid-area: header; }
+nav { grid-area: nav; }
+section { grid-area: section; }
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: 1fr 1fr 6fr;
+	gap: 10px 10px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "h1 h1"
+	  "header header"
+	  "nav section";
+  }
+
+  h1, header, nav, section {text-align: center;}
+  
 /**************************************
 DON'T CHANGE ANYTHING AFTER THIS LINE
 **************************************/

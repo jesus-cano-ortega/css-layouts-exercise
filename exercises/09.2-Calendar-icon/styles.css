@@ -3,13 +3,13 @@
 	top:0em;
   	left:1em;
 	padding-top:5px;
-	width:80px;
+	width:90px;
 	background:#ededef;
 	font-size: 54px;
 	text-align:center;
 	color:#000;
   
-	border-radius:3px;	
+	border-radius:7px;	
 	position:absolute;
 	}
 
@@ -31,18 +31,33 @@
 	z-index:1;
 	border-radius:10px;
 	box-shadow:0 1px 1px #fff;
+	position: absolute;
 	}
-.calendar:before{left:11px;}	
-.calendar:after{right:11px;}
+.calendar:before{
+	left:11px;
+}	
+
+.calendar:after{
+	right:11px;
+	top: 5px;
+}
 
 .calendar em:before, .calendar em:after{
 	content:'';
-	float: left;
 	margin: 10px;
 	width:4px;
 	height:14px;
-	background:blue;
+	background:#c4c4c4;
 	z-index:2;
+	position: absolute;
+	border-radius: 2px;
 	}
-.calendar em:before{left:13px;}	
-.calendar em:after{right:13px;}	
+
+.calendar em:before{
+	left:3px;
+	top:-15px;
+}	
+.calendar em:after{
+	right:3px;
+	top:-15px;
+}	
